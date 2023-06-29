@@ -1,5 +1,6 @@
 name: mlenv
 dependencies:
+  
 - ipython
 - ipykernel
 - nltk
@@ -10,10 +11,18 @@ dependencies:
 - seaborn
 - statsmodels
 - tensorflow
-- lightgbm
-- shap
 - pip
 - pip:
-  - statannotations
-  - bioinfokit
+  - simpledbf
+  - missingno
   - jupyterlab
+  - shap
+  - geopandas
+  - pyogrio
+  - git+https://github.com/pysal/libpysal.git
+  - pytables
+  - sqlalchemy
+  - openpyxl
+  - catboost
+  - xgboost
+  - lightgbm
