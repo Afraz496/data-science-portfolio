@@ -16,3 +16,4 @@ dependencies:
 - pip:
   - statannotations
   - bioinfokit
+  - jupyterlab
