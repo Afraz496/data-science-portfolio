@@ -1,19 +1,18 @@
 name: mlenv
 dependencies:
-  
-ipython
-ipykernel
-nltk
-numpy
-pymc3
-scikit-learn
-scipy
-seaborn
-statsmodels
-tensorflow
-lightgbm
-shap
-pip
-pip:
-  statannotations
-  bioinfokit
+- ipython
+- ipykernel
+- nltk
+- numpy
+- pymc3
+- scikit-learn
+- scipy
+- seaborn
+- statsmodels
+- tensorflow
+- lightgbm
+- shap
+- pip
+- pip:
+  - statannotations
+  - bioinfokit
