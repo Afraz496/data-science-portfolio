@@ -17,9 +17,6 @@ dependencies:
   - missingno
   - jupyterlab
   - shap
-  - geopandas
-  - pyogrio
-  - git+https://github.com/pysal/libpysal.git
   - pytables
   - sqlalchemy
   - openpyxl
