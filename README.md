@@ -31,6 +31,11 @@ source activate mlenv
 
 for more information on managing virtual environments see this [documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment).
 
+**Note**: If you install more dependencies  please update the yml file and run the command before activating the virtual environment:
+
+```bash
+conda env update --name mlenv --file environment.yml --prune
+```
 
 ## Project 1: Tabular Datasets
 
