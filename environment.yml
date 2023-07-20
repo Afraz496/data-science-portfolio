@@ -1,0 +1,21 @@
+name: mlenv
+dependencies:
+  
+- ipython
+- ipykernel
+- nltk
+- numpy
+- pymc3
+- scikit-learn
+- scipy
+- seaborn
+- statsmodels
+- tensorflow
+- pip
+- pip:
+  - jupyterlab
+  - shap
+  - openpyxl
+  - catboost
+  - xgboost
+  - lightgbm
