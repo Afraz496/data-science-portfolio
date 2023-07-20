@@ -19,3 +19,5 @@ dependencies:
   - catboost
   - xgboost
   - lightgbm
+  - ydata-profiling
+  - ipywidgets 
