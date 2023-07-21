@@ -24,7 +24,7 @@ from sklearn.ensemble import RandomForestRegressor
 from catboost import CatBoostRegressor
 import lightgbm as lgb
 from xgboost import XGBRegressor
-def fit_processor(train_df, target_variable):
+def fit_processor(train_df, target_variable,test_sample):
     """
         Runs data_prep function to create X_train,X_test,y_train,y_test
         Applies Simple Imputer to Categorical Features
@@ -45,7 +45,7 @@ def fit_processor(train_df, target_variable):
             sklearn preprocessor fit on the training set
         """
     #Calling data prep function to create X_train,X_test,y_train,y_test
-    X_train, X_test, y_train, y_test = Prep_data.data_prep(train_df,target_variable)
+    X_train, X_test, y_train, y_test = Prep_data.data_prep(train_df,target_variable,test_sample)
 
     features = X_train.columns.to_list()
     df_numeric_features = X_train.select_dtypes(include='number')
