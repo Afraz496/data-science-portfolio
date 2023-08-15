@@ -1,0 +1,23 @@
+# Home Directory
+
+
+# Directories
+
+
+## Filenames
+# Input Files
+
+# Variable Names
+predictor_name : 'stroke'
+
+# Output Files
+
+
+# Training File config
+cross_val_strategy : 'k-fold'
+n_splits : 10
+
+
+
+
+ 
