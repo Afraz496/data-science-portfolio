@@ -34,7 +34,7 @@ import lightgbm as lgb
 from xgboost import XGBClassifier
 import yaml
 
-with open('src/config.yaml') as f:
+with open('src/config.yml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
 logger = logging.getLogger('Data Science Portfolio Pipeline')
@@ -104,11 +104,11 @@ def cross_val(model, X_train, y_train, param_search):
     """
     cross_val_strategy = config['cross_val_strategy']
     n_splits = config['n_splits']
-    if cross_val_strategy is "k-fold":
+    if cross_val_strategy == "k-fold":
         cv = KFold(n_splits=n_splits, random_state=SEED, shuffle=True)
-    elif cross_val_strategy is "TimeSeriesSplit":
+    elif cross_val_strategy == "TimeSeriesSplit":
         cv = TimeSeriesSplit(n_splits=n_splits)
-    elif cross_val_strategy is "StratifiedKFold":
+    elif cross_val_strategy == "StratifiedKFold":
         cv = StratifiedKFold(n_splits=n_splits, random_state=SEED, shuffle=True)
     else:
         cv = KFold(n_splits=5, random_state=SEED, shuffle=True)

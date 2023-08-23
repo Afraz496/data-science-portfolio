@@ -8,7 +8,8 @@
 # Input Files
 
 # Variable Names
-predictor_name : 'stroke'
+date_time_col : ''
+predictor_name : 'SalePrice'
 
 # Output Files
 

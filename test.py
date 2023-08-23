@@ -14,7 +14,6 @@ import shap  # package used to calculate Shap values
 from sklearn.metrics import r2_score, mean_squared_error, make_scorer
 import train_test
 import random
-import delong
 import yaml
 
 logger = logging.getLogger('COVID Reinfection Pipeline')
@@ -22,7 +21,7 @@ logger = logging.getLogger('COVID Reinfection Pipeline')
 global model_names
 model_names = ['Lasso', 'Random Forest', 'LGBM', 'CatBoost', 'XGBoost']
 
-with open('src/config.yaml') as f:
+with open('src/config.yml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
 global predictor_name

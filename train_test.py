@@ -24,7 +24,7 @@ import lightgbm as lgb
 import xgboost
 import yaml
 
-with open('src/config.yaml') as f:
+with open('src/config.yml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
 # Model Names
@@ -33,7 +33,9 @@ model_names = ['Lasso', 'Random Forest', 'LGBM', 'CatBoost', 'XGBoost']
 
 # Predictor Column Name (modify in config file if needed)
 global predictor_name
+global date_time_col
 predictor_name = config['predictor_name']
+date_time_col = config['date_time_col']
 
 def config_logger(output_dir):
     logger = logging.getLogger("Data Science Portfolio Pipeline")
@@ -90,9 +92,16 @@ def main():
     split = math.floor(float(args.train_size)*len(all_data)) # 50% train
     train_data = all_data[:split]
     test_data  = all_data[split:]
-    train_dates = pd.to_datetime(train_dates)
-    test_dates = pd.to_datetime(test_dates)
 
+    try:
+        train_dates = train_data[date_time_col]
+        test_dates = test_data[date_time_col]
+        train_dates = pd.to_datetime(train_dates)
+        test_dates = pd.to_datetime(test_dates)
+    except:
+        logger.info("No Datetime column, opting for regular pipeline")
+    
+    
     # print some stats on data
     logger.info("Total samples: {}".format(len(all_data)))
     logger.info("    Train samples: {}".format(len(train_data)))
