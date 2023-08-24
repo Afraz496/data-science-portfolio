@@ -164,3 +164,7 @@ Data/
 
 # any csv file
 *.csv
+
+# Ouptut folders
+output*/
+Output*/
