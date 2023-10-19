@@ -89,8 +89,8 @@ def main():
 
 
     #train meta model
+    X_val_meta = pred_base_model.reshape(-1, 1)
 
-    X_val_meta = np.column_stack(pred_base_model)
 
     meta_model = LinearRegression()
     meta_model.fit(X_val_meta, y_test.values.ravel())
@@ -103,7 +103,7 @@ def main():
     rf_pred_new = base_model.predict(norm_X_actual_test)
 
     # Combine the predictions of the base models into a single feature matrix
-    X_new_meta = np.column_stack(rf_pred_new)
+    X_new_meta = rf_pred_new.reshape(-1, 1)
 
     y_new_meta = meta_model.predict(X_new_meta)
 
