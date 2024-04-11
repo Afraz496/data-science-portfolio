@@ -37,6 +37,10 @@ for more information on managing virtual environments see this [documentation](h
 conda env update --name mlenv --file environment.yml --prune
 ```
 
+# Projects
+
+Each of these projects are linked to a Medium article which help explain the project in more detail. The Python notebook is also available per project under the `notebooks` folder.
+
 ## Project 1: Tabular Datasets
 
 Tabular Datasets form the backbone of all Machine Learning problems. The terminology for this section 'tabular' is deliberately ambiguous. We will examine Regression and Classification problems but will keep other parameters consistent (like class imblanace) to make less complex machine learning problems. The goal is to examine ideal datasets under relatively ideal conditions and build the backbone of Machine Learning Pipelines.
