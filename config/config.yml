@@ -1,0 +1,29 @@
+# Home Directory
+home_wd : 'F:/Kaggle/data-science-portfolio'
+
+# Directories
+input_dir : 'Data/housing_price'
+
+## Filenames
+# Input Files
+input_filename : 'train.csv'
+
+# Variable Names
+date_time_col : ''
+predictor_name : 'SalePrice'
+
+# Output Files
+
+# Drop Features
+drop_features : ['Alley', 'FireplaceQu', 'PoolQC', 'Fence', 'MiscFeature']
+
+# Training File config
+train_size : 0.8
+base_model_split : 0.4
+cross_val_strategy : 'k-fold'
+n_splits : 10
+
+
+
+
+ 

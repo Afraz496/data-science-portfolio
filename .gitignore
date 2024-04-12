@@ -161,3 +161,10 @@ cython_debug/
 
 # Data Folder
 Data/
+
+# any csv file
+*.csv
+
+# Ouptut folders
+output*/
+Output*/
