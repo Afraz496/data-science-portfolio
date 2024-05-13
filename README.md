@@ -47,3 +47,10 @@ Tabular Datasets form the backbone of all Machine Learning problems. The termino
 
 ### [Housing Prices for Kaggle Learners](https://www.kaggle.com/competitions/home-data-for-ml-course/data)
 
+
+## Project 2: Reinforcement Learning
+
+## Project 3: Natural Language Processing (LLMs)
+
+## Project 4: Computer Vision
+
