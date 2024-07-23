@@ -2,7 +2,7 @@
 
 This portfolio encompasses 5 types of Data Science projects:
 
-1. Tabular Datasets (Housing Prices, Stock Prices etc)
+1. Tabular Datasets (Housing Prices, Stock Prices & Healthcare)
 2. Tabular Datasets with Class Imbalance
 3. Computer Vision
 4. Natural Language Processing (with a focus on sentiment extraction)
