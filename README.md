@@ -8,7 +8,7 @@ This portfolio encompasses 5 types of Data Science projects:
 4. Natural Language Processing (with a focus on sentiment extraction)
 5. Neural Networks and High Performance Computing
 
-This README serves as a guide through the projects, their relevant datasets and some decisions surrounding the Machine Learning exercises in each projects. The README will also cover how to use this repository if you wish to implement these projects on your own but please be sure to cite the creators of the repository: Afraz Arif Khan and Aamir Zargham.
+This README serves as a guide through the projects, their relevant datasets and some decisions surrounding the Machine Learning exercises in each projects. The README will also cover how to use this repository if you wish to implement these projects on your own but please be sure to cite the creators of the repository: Afraz Arif Khan.
 
 ## Setting up environment
 
